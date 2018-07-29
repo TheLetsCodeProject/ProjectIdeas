@@ -19,3 +19,35 @@ With this all said implementatiion now becomes somewhat trivial. We maintain an 
 It is important that we implement a system to change directories. We can change our current working directory by using `Directory.SetCurrentDirectory()` then we simply ensure that when we spawn a child proccess we set the `ProcessStartInfo.WorkingDirectory` to our current wd. 
 
 The advantage to using this appraoch is that we can simply alias existing CLIs like Python37 to a simple string and then call them. Because of we set wd, it means python will automatically open in our desired location. If we have UseShellExecute == false in our ProcessStartInfo initialiser then the programs will also run inside eour current terminal.
+
+### Example implementation
+```C#
+public static class Shell {
+	static Dictionary<string, Action<string[]>> ShellCMD =
+	new Dictionary<string, Action<string[]>>() 
+	{
+		{"pwd", Commands.PrintWorkingDirectory}
+	};
+
+	public static Run(){
+		string input = null;
+		do {
+			Console.Write("$ ")
+			input = Console.ReadLine();
+			string[] command = input.Split(new char{' '});
+			
+			if(ShellCMD.ConatainsKey(command[0])) {
+				ShellCMD.Invoke(command);
+			}
+
+		} while(input != "exit");
+	}
+
+}
+
+public static class Commands {
+	public static void PrintWorkingDirectory() {
+		Console.WriteLine(Directory.GetCurrentDirectory());
+	}
+}
+```
