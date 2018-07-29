@@ -26,7 +26,8 @@ public static class Shell {
 	static Dictionary<string, Action<string[]>> ShellCMD =
 	new Dictionary<string, Action<string[]>>() 
 	{
-		{"pwd", Commands.PrintWorkingDirectory}
+		{"pwd", Commands.PrintWorkingDirectory},
+		{"cd", Commands.ChangeDirectory}
 	};
 
 	public static Run(){
@@ -37,7 +38,7 @@ public static class Shell {
 			string[] command = input.Split(new char{' '});
 			
 			if(ShellCMD.ConatainsKey(command[0])) {
-				ShellCMD.Invoke(command);
+				ShellCMD.Invoke(command.Skip(0).ToArray());
 			}
 
 		} while(input != "exit");
@@ -46,8 +47,17 @@ public static class Shell {
 }
 
 public static class Commands {
-	public static void PrintWorkingDirectory() {
+	
+	public static void PrintWorkingDirectory(string[] args) {
 		Console.WriteLine(Directory.GetCurrentDirectory());
+	}
+
+	public static void ChangeDirectory(string[] args) {
+		try{
+			Directory.SetCurrentDirectory(Directory.GetCurrentDirectory() + args[0])
+		} catch(Exception) {
+			Console.WriteLine("Path could not be found");
+		}	
 	}
 }
 ```
