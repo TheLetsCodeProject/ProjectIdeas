@@ -35,3 +35,16 @@ This notation may look like this:
 
 ## Custom runtime interpreter
 Implement a custom scripting language and write an interpreter for it. These almost always follow the parser-lexer pattern where an input stream of characters get converted to 'tokens' and then get parsed. Often these interpreters act as virtual machines sharing their memory space with the executing script. Vassili Kaplan has a number of decent articles about [this](https://msdn.microsoft.com/en-us/magazine/mt632273.aspx). This works well in conjucntion with [shell projects](./Shell.md)
+
+## The parser and lexer pattern
+The parser and lexer pattern is the most common approach to proccessing source file. The lexer takes care of reading an input stream of characters and turns them into a 'token'. A token is a representation of a code symbol. A code symbol is any keyword or phrase used in code. Typically tokens are represented using simple data structures, strings or enums. An example might be:
+```C#
+int i = 3;
+```
+would be lexed to:
+```
+TYPE int
+IDENTIFIER i
+OPERATOR ASSIGNMENT
+LITERAL 3
+```
