@@ -1,3 +1,6 @@
+---
+title: Document Center
+---
 # ProjectIdeas
 A collection of various different project concepts with varying levels of planning.
 
