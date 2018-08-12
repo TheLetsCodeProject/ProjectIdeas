@@ -1,3 +1,6 @@
+<!--
+DO NOT CHANGE THE NAMEOF THIS FILE
+-->
 # Python
 Projects for mad snakes
 ***
@@ -15,8 +18,11 @@ Simple:
 ## twitter bot
 Make a mad twitter bot which can do sick shit. Maybe it tells the weather on request, generates art or tells a stock price.
 
-# Trump Cards
+## Trump Cards
 Create a trump cards game like the greek mythology one you made years ago. This could be done with a number of differerent data sets and could have the graphical card genrated by turtle. A really cool way to this would also to be to use the robohash API which generates avatars based on text inputs. There is ~1200 different images that can get generated.
+
+## String minimiser/Code obfuscator
+Write a simple package that obfuscates or minimises code or strings. The package could contain a simple library for manipulating strings or could have a full blown system for refactoring and obfuscating code. The latter option would rely heavily on REGEX.
 
 ## API client
 There are plenty of free and awesome API's out there just waiting to be used. With these we can make applications that watch stocks, predict weather and gives random number facts. Popular API's include NASA, Twitter, Reddit, YouTube, PokeMon and FlightCheck. One example might be to use a celebrity data API to create a game of Celeb-trump cards.
