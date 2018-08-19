@@ -25,6 +25,7 @@
 ![Image](./xps.png)
 
 **Looks:** 9/10
+
 **Core:** Intel i5 (4 Core @ 3.6Ghz) || Intel i7 (6 Core @ 4.1Ghz)
 
 **RAM:** 8GB (DDR4) || 8GB DDR4 || 16GB DDR4
