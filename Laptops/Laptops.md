@@ -2,6 +2,7 @@
 ***
 [View Here](https://www.acer.com/ac/en/AU/content/series-design/aspire7)
 ![Image](./acer.png)
+
 **Looks:** 6/10
 **Core:** Intel i7 (6 Core @ 2.2Ghz) || Intel i5 (4 Core @ 2.3Ghz)
 **RAM:** 16GB (DDR4)
@@ -15,6 +16,7 @@
 ***
 [View Here](https://www.dell.com/en-au/shop/laptops-2-in-1-pcs/xps-15-9570-laptop/spd/xps-15-9570-laptop?~ck=bt)
 ![Image](./xps.png)
+
 **Looks:** 9/10
 **Core:** Intel i5 (4 Core @ 3.6Ghz) || Intel i7 (6 Core @ 4.1Ghz)
 **RAM:** 8GB (DDR4) || 8GB DDR4 || 16GB DDR4
