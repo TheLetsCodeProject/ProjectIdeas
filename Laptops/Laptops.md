@@ -3,7 +3,9 @@
 [View Here](https://www.acer.com/ac/en/AU/content/series-design/aspire7)
 ![Image](./acer.png)
 
-**Looks:** 6/10
+**Design:** 6/10
+
+**Touchscreen:** No
 
 **Core:** Intel i7 (6 Core @ 2.2Ghz) || Intel i5 (4 Core @ 2.3Ghz)
 
@@ -19,12 +21,16 @@
 
 **Price Diff:** $300 || \$400
 
+**Battery Life:** 6 hours (Advertised and reviewed)
+
 ## Dell XPS 15
 ***
 [View Here](https://www.dell.com/en-au/shop/laptops-2-in-1-pcs/xps-15-9570-laptop/spd/xps-15-9570-laptop?~ck=bt)
 ![Image](./xps.png)
 
-**Looks:** 9/10
+**Design:** 10/10
+
+**Touchscreen:** No
 
 **Core:** Intel i5 (4 Core @ 3.6Ghz) || Intel i7 (6 Core @ 4.1Ghz)
 
@@ -34,18 +40,22 @@
 
 **Storage:** 256GB SSD || 256GB SSD || 512GB SSD
 
-**OS:** Windows 10 Home 64
+**OS:** Windows 10 Home (64)
 
 **Screen:** 15.6" 1080p (16:9) || 15.6" 1080p (16:9) || 15.6" 4K (16:9)
 
 **Price Diff:** $400 || \$1000 || \$1500
 
+**Battery Life:** 21 hours (Advertised) 9 hours on heavy use, 15 on light use (reviewed)
+
 ## Apple MacBook Pro (13 inch)
 ***
 [View Here](https://www.apple.com/au/shop/buy-mac/macbook-pro)
-![Image](./B72C0D77-325A-4D0C-9D4F-95C2E6E46DBA.jpeg)
+![Image](./macbook.jpeg)
 
-**Looks:** 10/10
+**Design:** 9/10
+
+**Touchscreen:** No
 
 **Core:** Intel i5 (2 Core @ 2.3Ghz)
 
@@ -60,3 +70,30 @@
 **Screen:** 13" 1080p (16:9)
 
 **Price Diff:** $400
+
+**Battery Life:** 10 hours (Advertised) 09:58 (reviewed)
+
+## Microsoft Surface Laptop
+***
+[View Here](https://www.microsoft.com/en-au/p/surface-laptop/90FC23DV6SNZ/DFX6)
+![Image](./surfacelaptop.jpg)
+
+**Design:** 9/10
+
+**Touchscreen:** Yes
+
+**Core:** Intel i5 (2 Core @ 2.5Ghz) || Intel i7b (2 core @2.5Ghz)
+
+**RAM:** 8GB (DDR4)
+
+**Graphics:** Intel HD 620 || Intel Iris 640
+
+**Storage:** 256GB SSD
+
+**OS:** Windows 10 S Home (64) [CAN BE SWITCHED TO WINDOWS 10 HOME FOR FREE]
+
+**Screen:** 15.6" 1080p (16:9)
+
+**Price Diff:** \$500 || \$1000
+
+**Battery Life:** 14:30 hours (Advertised) 8 hours solid use, 14:40 hours light video watching (reviewed)
