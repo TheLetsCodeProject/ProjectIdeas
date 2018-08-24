@@ -7,6 +7,8 @@
 
 **Touchscreen:** No
 
+**Weight:** 2.38Kg
+
 **Core:** Intel i7 (6 Core @ 2.2Ghz) || Intel i5 (4 Core @ 2.3Ghz)
 
 **RAM:** 16GB (DDR4)
@@ -30,7 +32,9 @@
 
 **Design:** 10/10
 
-**Touchscreen:** No
+**Touchscreen:** No || No || Yes
+
+**Weight:** 2.09Kg
 
 **Core:** Intel i5 (4 Core @ 3.6Ghz) || Intel i7 (6 Core @ 4.1Ghz)
 
@@ -57,6 +61,8 @@
 
 **Touchscreen:** No
 
+**Weight:** 1.83Kg
+
 **Core:** Intel i5 (2 Core @ 2.3Ghz)
 
 **RAM:** 8GB (DDR3)
@@ -82,7 +88,63 @@
 
 **Touchscreen:** Yes
 
-**Core:** Intel i5 (2 Core @ 2.5Ghz) || Intel i7b (2 core @2.5Ghz)
+**Weight:** 1.28Kg
+
+**Core:** Intel i5 (2 Core @ 2.5Ghz) || Intel i7 (2 core @2.5Ghz)
+
+**RAM:** 8GB (DDR4)
+
+**Graphics:** Intel HD 620 || Intel Iris 640
+
+**Storage:** 256GB SSD
+
+**OS:** Windows 10 S Home (64) [CAN BE SWITCHED TO WINDOWS 10 HOME FOR FREE]
+
+**Screen:** 15.6" 1080p (16:9)
+
+**Price Diff:** \$500 || \$1000
+
+**Battery Life:** 14:30 hours (Advertised) 8 hours solid use, 14:40 hours light video watching (reviewed)
+
+## Apple MacBook Pro (13 inch)
+***
+[View Here](https://www.apple.com/au/shop/buy-mac/macbook-pro)
+![Image](./macbook.jpeg)
+
+**Design:** 9/10
+
+**Touchscreen:** No
+
+**Weight:** 1.83Kg
+
+**Core:** Intel i5 (2 Core @ 2.3Ghz)
+
+**RAM:** 8GB (DDR3)
+
+**Graphics:** Intel Iris 640
+
+**Storage:** 128GB SSD
+
+**OS:** Mac OS X High Sierra
+
+**Screen:** 13" 1080p (16:9)
+
+**Price Diff:** $400
+
+**Battery Life:** 10 hours (Advertised) 09:58 (reviewed)
+
+## Microsoft Surface Book 2
+***
+[View Here](https://www.microsoft.com/en-au/p/surface-laptop/90FC23DV6SNZ/DFX6)
+![Image](./surfacelaptop.jpg)
+
+**Design:** 9/10
+
+**Touchscreen:** Yes
+
+**Weight:** 1.28Kg
+
+**Core:** Intel i5 (2 Core @ 2.5Ghz) || Intel i7 (2 core @2.5Ghz)
 
 **RAM:** 8GB (DDR4)
 
