@@ -19,13 +19,13 @@
 
 **OS:** Windows 10 Home
 
-**Screen:** 17.3" 1080p (16:9)
+**Screen:** 15.6" 1080p (16:9)
 
 **Price Diff:** $300 || \$400
 
 **Battery Life:** 6 hours (Advertised and reviewed)
 
-## Dell XPS 15
+## Dell XPS 15 (9570)
 ***
 [View Here](https://www.dell.com/en-au/shop/laptops-2-in-1-pcs/xps-15-9570-laptop/spd/xps-15-9570-laptop?~ck=bt)
 ![Image](./xps.png)
@@ -51,6 +51,9 @@
 **Price Diff:** $400 || \$1000 || \$1500
 
 **Battery Life:** 21 hours (Advertised) 9 hours on heavy use, 15 on light use (reviewed)
+
+### Notes:
+Most reviews highlight the fact that the touch screen is kinda unecessary and will probably be better when turned off. 4k limits battery life although its unclear by how much. IO on this machine is really good for an ultrabook (2x USB-A 3.1 Gen 1, 1x USB-C ThunderBolt 3 (40Gbps bi-directional) [HDMI, VGA, Ethernet, USB 3.1 Gen 2, 4 lanes PCIe Gen 3], Native HDMI, Barrel Power, Headphones/Microphone 1/8 inch jack, SD [All types], All have PowerShare)
 
 ## Apple MacBook Pro (13 inch)
 ***
@@ -80,60 +83,6 @@
 **Battery Life:** 10 hours (Advertised) 09:58 (reviewed)
 
 ## Microsoft Surface Laptop
-***
-[View Here](https://www.microsoft.com/en-au/p/surface-laptop/90FC23DV6SNZ/DFX6)
-![Image](./surfacelaptop.jpg)
-
-**Design:** 9/10
-
-**Touchscreen:** Yes
-
-**Weight:** 1.28Kg
-
-**Core:** Intel i5 (2 Core @ 2.5Ghz) || Intel i7 (2 core @2.5Ghz)
-
-**RAM:** 8GB (DDR4)
-
-**Graphics:** Intel HD 620 || Intel Iris 640
-
-**Storage:** 256GB SSD
-
-**OS:** Windows 10 S Home (64) [CAN BE SWITCHED TO WINDOWS 10 HOME FOR FREE]
-
-**Screen:** 15.6" 1080p (16:9)
-
-**Price Diff:** \$500 || \$1000
-
-**Battery Life:** 14:30 hours (Advertised) 8 hours solid use, 14:40 hours light video watching (reviewed)
-
-## Apple MacBook Pro (13 inch)
-***
-[View Here](https://www.apple.com/au/shop/buy-mac/macbook-pro)
-![Image](./macbook.jpeg)
-
-**Design:** 9/10
-
-**Touchscreen:** No
-
-**Weight:** 1.83Kg
-
-**Core:** Intel i5 (2 Core @ 2.3Ghz)
-
-**RAM:** 8GB (DDR3)
-
-**Graphics:** Intel Iris 640
-
-**Storage:** 128GB SSD
-
-**OS:** Mac OS X High Sierra
-
-**Screen:** 13" 1080p (16:9)
-
-**Price Diff:** $400
-
-**Battery Life:** 10 hours (Advertised) 09:58 (reviewed)
-
-## Microsoft Surface Book 2
 ***
 [View Here](https://www.microsoft.com/en-au/p/surface-laptop/90FC23DV6SNZ/DFX6)
 ![Image](./surfacelaptop.jpg)
