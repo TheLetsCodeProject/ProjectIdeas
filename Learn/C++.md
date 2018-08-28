@@ -55,6 +55,10 @@ int result = 8 * (7 + 1); //result = 64
 In a normal C++ programs there is a `main()` entry point. This is where your code would begin execution. In an arduino program it works a little differently. The entry point for an arduino program is the `setup()` function. This function runs once at start up. The next function is the `loop()` function, which runs continuously after that. Remember from the last section that functions/methods are just groups of code that can be called at a later time. These two lifecycle functions are called by the hardware.
 ```C++
 void setup(){
-  u/ R
+  // Runs once on start up
+}
+
+void loop(){
+  // Runs endlessly
 }
 ```
