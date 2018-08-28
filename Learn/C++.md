@@ -40,6 +40,7 @@ C++ supports all normal mathematical operations.
 - Subtraction: **-**
 - Multiplication: **\***
 - Division: **/**
+
 We can use them in assignments like the following:
 ```C++
 int number = 1;
