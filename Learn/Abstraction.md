@@ -84,15 +84,28 @@ Or:
 
 Carrying now everytime we hit 1, instead of 9. You'll note that there is 8 columns above, which is exactly the same amount of bits needed for a byte and because each column can hold only one of two values, we can use a bit to represent them. A key limitation of this system is that it requires much more space to write large numbers. In base 10, the 8th column is worth 10 million, in binary it is worth a meagre 128. This does not really matter though as we have plenty of bytes avaiblable to us in memory (In modern machines commonly up to 137438953472 of them). DO remember that we are essentially forced to use base 2 as our turing machines can only handle ON/OFF states. We have now completed the second layer of abstraction, prescribing meaning to a collection of bits. Lets do a simple example of binary counting to test our knowledge:
 
-<details><summary>What is the base 10 equivilent for binary number `0110`?</summary>
+<details><summary>What is the base 10 equivilent for binary number `00000110`?</summary>
 <p>
 
 ### 6
-| 8's | 4's | 2's | 1's |
-| --- | --- | --- | --- |
-|    0|    1|    1|    0|
 
-`(0*8) + (1*4) + (1*2) + (0*1) = 6`
+| 128's | 64's | 32's | 16's | 8's | 4's | 2's | 1's |
+| ----- | ---- | ---- | ---- | --- | --- | --- | --- |
+|      0|     0|     0|     0|    0|    1|    1|    0|
+
+`(0*128) + (0*64) + (0*32) + (0*16) + (0*8) + (1*4) + (1*2) + (0*1) = 6`
 
 </p>
 </details>
+
+#### ASIDE: Signing numbers & Maximum values
+So far our examples have consisted of one byte unsigned integers with maximum value 255, this is a competely theoretical data type and is in practice more analogous to the char data type. 'one byte unsigned integer' may sound like a mouth full so lets break it down.
+
+We can tell something is one byte by counting the number of bits in it. One byte is 8 bits so therefore `NumberOfBits/4 = NumberOfBytes`. If we count our above examples we can see there are 8 bits, 1 byte. Now how about the 'unsigned' part. Unsigned simply means that the number contains no sign (+/-), it simply exists as a magnitude. There are important implications for usinged integers as they have a significantly different range of values. The maximum value for a one byte unsigned int is 255, the maximum value for a signed int is 127. Why? It has to do with the way which we represent sign in memory.
+
+As we saw earlier, a one byte unsigned int look like the following: `00000000`. The whole byte is used for storing the number, but what happens when we need negatives. Easy, just reserve the first bit as the sign: 1 = negative, 0 = positive, uhhhh not quite though. This approach allows for negative and positive zero, which would break logic gates (`10000000` and `00000000` are not the same yet they would both be considered 0..?). So instead, we use _2's compliment_, This method _does count 0 as being positive_, but that does not break maths so its fine. Two's compliment can be calculated by simply flipping the bits and adding one:
+`00000110` (+6) gets flipped to become `11111001` then we add '1' > `11111010` (-6).
+**NOTE:** The first bit in signed ints is still reserved to denote sign. 0 = positive, 1 = negative.
+It is good to realise that signed ints have the same range of numbers as there equivilent unsigned int however their max value is much lower. This is because we reserve the first bit (with place value 128) for sign, effectively reducing the maxiumum possible value by 128. These two ints however, do maintain the same range as unsigned ints can go from -128 to +127 the range therefore being 255
+
+## Layer 2: Text and Typecasting
