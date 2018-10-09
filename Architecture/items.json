@@ -1,0 +1,31 @@
+[
+  {
+    "id" : "package.exampleItem",
+    "name" : "Example Item",
+    "stats" : {
+        "Damage" : 120,
+        "Durability" : 1000,
+        "Range" : 40,
+        "Critical Multiplier" : 10
+    },
+    "properties" : [
+      "AlwaysOn",
+      "DestroyOnDrop"
+    ],
+    "dynamic properties" : [
+      {
+        "property" : "status_effect_poison",
+        "settings" : {
+          "time" : "default",
+          "strength" : "default"
+        }
+      },
+      {
+        "property" : "enchant_damage",
+        "settings" : {
+          "level" : 20
+        }
+      }
+    ]
+  }
+]

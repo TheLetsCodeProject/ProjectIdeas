@@ -1,0 +1,21 @@
+{
+  "package-lock" : 0,
+  "header" : {
+    "Name" : "Example Package",
+    "Version" : [0, 0, 1],
+    "Description" : "My example package",
+    "Author" : "Example Inc",
+    "package icon" : "./pack-icon.png"
+  },
+  "details" : {
+    "uuid" : "Some Universal Unique Identifier",
+    "dependencies" : [
+      ["package name", "uuid"],
+      ["other package name", "other uuid"]
+    ],
+    "texture atlas" : "The relative path from the manifest to the texture atlas",
+    "External" : {
+      "sounds" : "./res/sound"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collections" :[
+    {
+      "weight" : 0.25,
+      "selection type" : "single",
+      "items" : ["package.superRareItem", "otherPackage.veryVerySpecialItem"]
+    },
+    {
+      "weight" : 1,
+      "selection type" : "single",
+      "items" : ["package.rareItem", "otherPackage.specialItem"]
+    },
+    {
+      "weight" : 10,
+      "selection type" : "multiple",
+      "items" : ["package.exampleItem", "otherPackage.otherItem"]
+    }
+  ]
+}
