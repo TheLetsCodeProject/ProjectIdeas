@@ -187,7 +187,7 @@ When computers were new they had very, very limited processors. So simple that i
 
 After establishing enough basic binary code, you were able to write more binary that used the stuff that was already written to do even more stuff. This in itself is a small layer of localised abstraction, hiding away the low level machine code and using it to build more complex routines. This is a pattern that is familier to all programming languages. Eventually the binary code base got sufficently large to take in an input stream of characters and turn them into more machine code. This was the true birth of Assembly. Eventually we get so abstracted that compilers don't even bother compiling to machine code, they just compile to assembly and let the operating system do the rest.
 
-## The compiler and early programming languages
+## Level 5: The compiler and early programming languages
 Assembly was a world faster to write than binary or hex code. It allowed for much more rapid development. For example the addtion of two itegers in binary looks like the following:
 ```c
 Location Hex     Instruction Code Binary     Instruction Code Hex     Instruction     Comments
@@ -197,8 +197,45 @@ Location Hex     Instruction Code Binary     Instruction Code Hex     Instructio
 103              0111 0000 0000 0001         0x7001                   HLT             Halt computer
 ```
 **NOTE:** All text in the above example was just to make the binary semi-readable to programmers of the time. The 'instruction code binary or hex' is what would have actually been written.
+
 This same operation in assembly (specifically in intels IA-32 asm) look like the following:
 ```asm
 leal 0x33333333, %ac
 addb $-126,%ac
 ```
+Even if you barely understand the above examples (Don't worry I only just grasp it) you can probably see that ASM code is much, much, more consise, but it wasnt perfect. It still required 50 lines of code to effectively multiply two digits however you could define subroutines to make this easier.
+
+As soon as programmers got their hands in ASM they began to work on new prograamming concepts. The problem was, not many of them cared to advance languages. Enter: Grace Hopper. Grace Hopper rarely get the credit shes due. She was the pioneer of compiler theory and actually developed one of the first programming language specs. Her concept involved a program, much like an assembler, that took an input stream of characters or text (Remember that we can define characters using binay and store that binary in files) and spat out a machine code version. The major difference is that whilst assembly just converted english instructions to machine instructions, FLOW-MATIC and her compiler would add another layer of abstraction. You see, in the examples above the instructions are identical. You still have to Reference variables locations directly from RAM, and you have to manually push them to the CPU. Hopper saw this hassle as unecessary and distracting from the important things. The FLOW-MATIC compiler would do something radical: It would abstract away hardware manipulation, letting the programmer get straight to business. The FlOW-MATIC compiler would be able to read:
+```c
+__start:
+    SOME_VARIABLE = 5
+    ADD(4, SOME_VARIABLE)
+```
+And convert it to:
+```
+push 0x05, 0x33333333
+leal 0x33333333, %ac
+addb $4,%ac
+```
+This was such a cool idea. Instead of just translating the same instructions to a different form, FLOW-MATIC would actually work out the required instructions. For another language based analogy: I want to be able to tranlate my book to spanish. I hire a translator to read through my book and tranlate it literally to spanish. It sells well so I decided to write another. I cant be bothered dealing with grammar and words this time though, so I just draw a collection of pictures instead, and let the translator work out the details. The assembler is like the translator with the first book, directly copying the meaning. The FLOW-MATIC concept compiler was supposed to work more like the second, infering meaning and taking care of all the hard, boring and down right repetitive stuff. The other main advantage that Hopper's compiler had was that it compiled to assembly, not binary. Because of this, you could set up the compiler to compile to any form of ASM (Remember that each CPU brand had their own form). For the first time ever, we were able to have a cross platform language. All you had to do was just change the compile target. Wanted to run on IBM machines, target BAL-ASM, wanted to run on PowerPC machines, target IBM-ALP-ASM.
+
+The first language to really implement a compiler and surparse assembly code in efficiency was FORTRAN (Don't ask me why the naming convention for languages seemingly meant you had to capitilaise). Fortran was a really good language, and I mean really good, compared to assembly. They design team took all of their cues from Hopper and ended up with a language which could understand the following:
+```fortran
+Integer :: a, b, c
+a = 3
+b = 4
+c = a + b
+```
+It could even handle exponentials (which would be several hundred lines of assembly):
+```fortran
+c = a**b ! A to the power of B
+```
+From this point on languages began to come out of the wood work. COBOL, LISP (Inspired python), SmallTalk (Inpsired C++, Java and C#), ALGOL, SAGE, Pascal and BASIC all became very popular. There was calm in the world of computer science, then a knock on the door... it was C.
+
+## Level 6: The rise of C
+The coming of C resulted in one of the biggest mass genocides this world has ever witnessed. It came and ruled with an iron fist, all but smiting any language that stood in its way. C was a language so revolutionary, so powerful, it is still considered a first class language today. C was the first modern language (It was developed over 46 years ago). 
+
+But why is it so good. What makes it deserving of its own layer of abstraction. Well to put it shortly, C is the king of abstraction. You see, languages up until this point were very procedural in nature. This meant that the language had a predefined set of features it could do, and that was that. C was better, C let you do whatever you wanted to do. This is because C allowed you to directly write binary and manipulate memory at a bit level, it let you do everything that assembly let you do (You could even embed ASM directly into a C program) whilst also being able to do everything that all the other high level languages could do combined. It was this flexibility combined with the crazy speed that C posses that allowed you to write everything from video games to whole operating systems in it. C could run on any machine, even tiny microprocessors. It truly was and still is an incredible language. No other language gives you as much power as C (Except for maybe C++). 
+
+It achieved all this by allowing the user to define their own data strucutres 
+
