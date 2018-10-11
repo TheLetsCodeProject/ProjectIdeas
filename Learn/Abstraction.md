@@ -212,7 +212,7 @@ __start:
     ADD(4, SOME_VARIABLE)
 ```
 And convert it to:
-```
+```asm
 push 0x05, 0x33333333
 leal 0x33333333, %ac
 addb $4,%ac
