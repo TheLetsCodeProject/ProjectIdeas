@@ -113,3 +113,92 @@ Due to the nature of binary, it has become standard practice in computing to cou
 Hence the 1st item, comes second as we start with 0th item.
 
 ## Layer 2: Text and Typecasting
+Now that we have a number system in place, we can move on to abstracting more types of data on top of them. So far, we have not actually done any real software work, an instead just given meaning to randoom arrangments of ON/OFF messages. This is basically the key to abstraction, simplying finding easier and easier ways to comprehend things. 
+
+Consider the natural numbers. They map very convenienty to infinite sets. We can now choose to represent an item from a set simply by recording the position of that item in its set. This only requires one thing to work effectively, an ordered standard from which to match positions. 
+
+One early example of these standards was the ASCII standard. ASCII stands for 'American Standard Code for Information Interchange' and was the first standardised character set. Now we could simply use numbers to represent letter, and then just match those numbers against the ASCII standard. Remember those 1 byte unsigned ints from before? Well they have 256 possible values, which was more than enough for every character in existence at the time (computers only targeted US/UK markets). In fact, representing letters and characters using a 1 byte unsigned int became so common that we starting calling that data type a 'char'.
+
+Another example of abstraction on top of numbers is the RGB colour standard. RGB stands for Red-Green-Blue and directly correlates to the way digital screen show colour. Instead of having to memorize weird binary values for any colour we need, we can simply use RGB. RGB values have one byte of data per channel, meaning that we can give values up to 255 for each channel. This makes it incredibly easy to 'mix' colours. 
+
+#### ASIDE: The byte boundary
+Due to the design of computing architectures and RAM, it is wise to keep data inside byte boundaries, which are essentially theoretical walls between each segment of data. The occur every 2^n bytes, meaning that data types should fill 1, 2, 4, 8 or 16.. etc bytes of data. Since RGB is only 3 bytes (One byte per channel), it is often a convention to add a 'padding' byte to make the RGB data structure a total of 4 bytes.
+
+It is interesting to see how far we have come. We are now able to say something like [A=1, B=2, C=3... etc] and then use a collection of numbers to represent words. However, we are actually using base-2 to represent those numbers, and our base-2 is infact represented in binary, which in turn represents electronic flow. 
+
+If the following is a representation of some 'toy' RAM (Each new line is a byte boundary):
+```
+0000 0000 0000 0000 0000 0000 0000 0000 
+0000 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000
+```
+If we were to place three RGB values without adding into this memory it would now look like:
+```
+0110 1100 0001 1110 1011 1100 0110 1100 |
+0001 1110 1011 1100 0100 1111 1000 1100 |
+0100 1110 0000 0000 0000 0000 0000 0000 |
+0000 0000 0000 0000 0000 0000 0000 0000
+```
+Apart from it being difficult to tell the difference between RGB values, it is actually slower for the machine to work with as the data crosses byte boundaries, after 3 bytes, the next value starts. For a 2^n byte boundary we should instead use 4 bytes, which is why we use padding:
+```
+0110 1100 0001 1110 1011 1100 0000 0000 |
+0001 1110 1011 1100 0100 1111 0000 0000 |
+0100 1110 0011 0110 0001 1010 0000 0000 |
+0000 0000 0000 0000 0000 0000 0000 0000 |
+```
+Our memory is now much neater and does not cross boundaries.
+
+#### ASIDE: Hexadecimal
+There are a few differrent layers throughout this, that, whilst minor and unimportant, can be very convenient. One such layer would be hexadecimal (hex for short). I will not elaborate on how it works as I would like to think my explanation of binary earlier was sufficent to use for other systems. Hex is base-16 and therefore consisting of 16 digits. These digits are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E and F, F having the value of 15. Hex is useful because the max value for a nybble (a half-byte or 4 bits: `0000`) is 15, We means we can represent one byte of data with just two hex digits. We represent hex with the prefix `0x` or `#` so it is clear what number format we are using. (binary gets prefixed with 0b or suffixed with b).
+
+Example: If we wanted the colour white as an RGB value (white is the max of all colours), we would write something like:
+```c
+//This is pseudo code
+WhiteColour = (255, 255, 255)
+```
+Now that doesnt really seem like a hassle but since we know that two hex digits map perfectly to a byte and that there are three bytes of value in RGB, we can represent any colour with just 6 digits. Futhurmore, because we know that each byte is going to be represented by two digits we eliminate the need for comma's and brackets as the are implicit between the fixed width hex bytes.
+```c
+WhiteColour = 0xFFFFFF
+```
+
+#### ASIDE: Encoding standards
+ASCII was indeed sufficient for early systems and covered enough characters to be useful, however useful is not the same thing as adequate. Soon enough the original ASCII spec became too dated and missed many important characters both from the UK/US character set as well as those from other countries. Most modern systems now use unicode for their text encoding. Unicode includes a much greater character mapping including: The entire ASCII spec, Emoji, Every emergency symbol, Binary Digits and the symbols of virtually every language in the world. This means that modern programming languages usually define the char data type as being 16 bits (2 bytes instead of 1). 2 bytes of unsigned data is enough to represent 65,536 characters. For some very specific encodings it may be necessary to use a 32 bit integer.
+
+## Where to next..?
+We have now covered most of the super basic stuff and it leaves us with a few choices. There are no clear and obvious paths from here as we can take the abstractions in any direction. I believe the best choice going forward to to examine abstractions in programming. Building from our base of numbers and letters, we will begin to move away from binary operations and begin to look at the advent of programming as it is known today. But before we get moving, we must discuss some new concepts.
+
+As of this point, the only hardware component we have touched on is RAM. Whilst RAM is important, but not the only necessary. To program we need a machine that is turing complete, one that can not only store data, but make decisions too. This is where those bitwise logic operators (logic gates) that I mentioned early on come important. As electronic current flows from the RAM, it enters the CPU. The CPU is not smart, it is not wise. In fact, the CPU is what makes our simple machines into real computers. It does this using billions of transistors (up to 6 billion in our phone CPUs, 19 billion in an i7 8700k) and millions of logic gates (AND, NAND, OR etc). As electricity hits the CPU, the transistors go to work flipping like a factory full of switch meddling monkeys. These switches eventually convert input to output, which can then be stored in RAM or hard storage. Of course, as with everything, there is wayyyyy more depth surrounding the implementation of CPUs, especially modern ones. However, due to the complex and messy nature of such technical proceedings and my addmittedly limited knowledge in certain edge senarios, I will not endevour to explain them.
+
+For the next part of our journey, we will have to assume and skip some things. As I said in the intro, I do not intend to explain hardware implemtation as I find the prospect positively mind numbing. As  a result are to assume that somewhere along the line the necessary equipment to interface with the machine has been developed (Punch cards, Keyboard, Digital Storage, Monitors.. etc). I will also assume that you have experienced at least limited interaction with programming.
+
+We will skip level 3 as it consists of early operating systems. These early systems were not important as they only provided the ability use file systems and save data and programs as well as navigate these folders of data.
+
+## Level 4: Assembly Language
+At some point (although I'm not sure when) there was a conceptual leap in programming. Originally you had to write code in binary of hex, literally considering every transistor's interaction to get the desired output. If you are masochistic and wish to experience the pain of existence caused by being a programmer in this time, try to master boolean algebra. The leap occured with the emergence of Assembly Language, Assembler Language or ASM (They are all the same thing). Assembly is the lowest level programming language and literally relied on the manual allocation of memory, meaning the programmer had to specifically specify where bytes should be placed and when. It was god awful, but still greatly better than binary or hex.  It was made even more annoying considering that every brand of CPU had their own version of ASM. Whenever you wrote some assembly code, you would have to put it through an 'assembler', which was an early attempt at a compiler written in hex. The assembler would then convert the ASM into machine code (see aside below) using twisted and peverse methods only an evil sociopath could fully comprehend. ASM is now considered so low level that it is essentially thought of as binary: So limited and basic that the CPU can just understand it (Although its not true, it still has to be put through an assembler before it can be run)
+
+#### ASIDE: Machine code
+Machine code is just plain binary information. The only difference between the binary we were looking at earlier and machine code, is that we have the intention of 'running' machine code. The goal of machine code is to be used to actually execute actions and be run through the CPU, the purpose of our simply data types was just to exist and represent data. Try this analogy: Whilst a dictionary and Spoken language are both defined using the same set of words, a dictionary purely exists to reference and define information, spoken language allows us to express ideas and convey instructions. Binary is the words, RAM and basic data is the dictionary, and machine code is the spoken part.
+
+#### ASIDE: Too much?
+If this last little bit has made you feel like we jumped a little bit too far, read the following for a much more indepth explanation.
+
+When computers were new they had very, very limited processors. So simple that is was very concievable that one person could fully understand the entire chip. To write programs, you had to specifically lay out what individual charges need to occur in what order. If knew the system well enough you would be capable of manipulating the order in which switches flip. When a switch flipped it would redirect current allowing different switch to then flip, eventually culminating in an ouput. Its sorta of like a huge redstone circuit. If you've ever made a redstone lock, you have made a tiny processor; By manipulating certain inputs it computes a desired ouput, the door opening. Most operating systems provided basic functionalilty. Normally if you wanted to add two numbers, you'd have to write manual code for activating the adder ciruit in a processor, but with an operating system, youd just have to write some binary to interact with the OS and ask it to add the numbers instead. Modern operating systems are not responsible for such simple tasks anymore and instead deal with more complex things like graphics drivers. 
+
+After establishing enough basic binary code, you were able to write more binary that used the stuff that was already written to do even more stuff. This in itself is a small layer of localised abstraction, hiding away the low level machine code and using it to build more complex routines. This is a pattern that is familier to all programming languages. Eventually the binary code base got sufficently large to take in an input stream of characters and turn them into more machine code. This was the true birth of Assembly. Eventually we get so abstracted that compilers don't even bother compiling to machine code, they just compile to assembly and let the operating system do the rest.
+
+## The compiler and early programming languages
+Assembly was a world faster to write than binary or hex code. It allowed for much more rapid development. For example the addtion of two itegers in binary looks like the following:
+```c
+Location Hex     Instruction Code Binary     Instruction Code Hex     Instruction     Comments
+100              0010 0001 0000 0100         0x2104                   LDA 104         Load first operand into AC
+101              0001 0001 0000 0101         0x1105                   ADD 105         Add second operand to AC
+102              0011 0001 0000 0110         0x3106                   STA 106         Store sum in location 106
+103              0111 0000 0000 0001         0x7001                   HLT             Halt computer
+```
+**NOTE:** All text in the above example was just to make the binary semi-readable to programmers of the time. The 'instruction code binary or hex' is what would have actually been written.
+This same operation in assembly (specifically in intels IA-32 asm) look like the following:
+```asm
+leal 0x33333333, %ac
+addb $-126,%ac
+```
