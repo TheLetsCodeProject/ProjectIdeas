@@ -128,17 +128,17 @@ It is interesting to see how far we have come. We are now able to say something 
 
 If the following is a representation of some 'toy' RAM (Each new line is a byte boundary):
 ```
-0000 0000 0000 0000 0000 0000 0000 0000 
-0000 0000 0000 0000 0000 0000 0000 0000
-0000 0000 0000 0000 0000 0000 0000 0000
-0000 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000 |
+0000 0000 0000 0000 0000 0000 0000 0000 |
+0000 0000 0000 0000 0000 0000 0000 0000 |
+0000 0000 0000 0000 0000 0000 0000 0000 |
 ```
 If we were to place three RGB values without adding into this memory it would now look like:
 ```
 0110 1100 0001 1110 1011 1100 0110 1100 |
 0001 1110 1011 1100 0100 1111 1000 1100 |
 0100 1110 0000 0000 0000 0000 0000 0000 |
-0000 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000 |
 ```
 Apart from it being difficult to tell the difference between RGB values, it is actually slower for the machine to work with as the data crosses byte boundaries, after 3 bytes, the next value starts. For a 2^n byte boundary we should instead use 4 bytes, which is why we use padding:
 ```
