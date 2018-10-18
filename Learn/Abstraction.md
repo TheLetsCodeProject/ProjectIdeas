@@ -284,3 +284,10 @@ If you inlcude langauges written in C, using the C compiler, or are feature deri
 - Kotlin
 
 And those are just the major ones!! Small hobby languages are not included here. Hopefully I can eventually implement [LoopDeeDoo](https://github.com/LetsCode-Angus/LoopDeeDoo) in C.
+
+## Layer 7: Introducing the Virtual Machine
+C was such a great language that it immediately inspired programmers of the world to look for the next big thing. Various other languages came and went, each with their own new set of features, but none of them ever _stuck_ as well as C did. That was until Sun Microsystems came out with Java.
+
+Java followed after C in that it was Object Oriented in nature. It was fairly fast and very flexible. Aside from being slightly simpler than C, Java only had one advantage - It's virtual Runtime.
+
+Remember the 'compiler', a type of program first conceptualized by Grace Hopper. It was the compiler's job to transform input text (code) to output machine code (binary) in a fast and performant way. This model of running code had been the soul method for quite some time now, and Java decided to change it up. Sun Microsystems wanted to go a layer further. Instead of recompiling to each and every different platform you wanted to run on, why couldn't you just ccompile once, run everywhere? The team at Sun Micro put their heads together and designed something awesome - The virtual machine.
