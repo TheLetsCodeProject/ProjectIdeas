@@ -55,6 +55,7 @@ class Person(object):
         "Fuck off you dirty filth",
         "Roses are red violets are blue, God made me pretty, what happened to you?",
         "Just found out you had an illness, I hope its nothing too trivial",
+        "Some people are dropped on their head as a child... you were clearly thrown at a wall",
       ]
     }
 
