@@ -39,6 +39,7 @@ The little light cast by the torches flickers against the cobbled walls. For how
 ##### Date: 3/11/18
 #### The USNS Glomar
 > I can neither confirm nor deny the alleged…
+
 If you’ve ever watched popular media or seen a spy film, chances are you’ve heard this phrase. But where does it come from, when was it first use. Well, surprisingly, the answer is rather interesting.
 
 The year is 1970 and the two world super powers have been locked in their cold war for over a decade. Tensions are high and both the Russian and American intelligence agencies are desperate for any little bit of information they can find on the opposition.
