@@ -31,3 +31,35 @@ As a non religious person, I often find my self questioning the nature of existe
 When weighing these ideas up in my head I came to a conlcusion. I have an optimistic attitude towards the truly meaninglessness of life. But being a realist I do not mean life is meaningless in an emotional sense, but more that it just logically doen't matter.
 
 I'm sick of identity politics. I'm sick of how polarising everyone has to be. People take eveything the extemes. Movies are never 'Meh', they only come in 'great' and 'terrible'. I want a world where people seek happiness with themselves, not some bullshit ideology founded in materialistic understanding. Don't let the minutiae weigh on you. Be the optimistic nihilist we all need to be. Embrace it.
+
+##### Date: 3/11/18
+#### It all fades to black
+The little light cast by the torches flickers against the cobbled walls. For how long I've been here I do not know. I sit up and am painfully reminded of the shackles that have me bound. I don't know what is real anymore. I float in and out of dreams, casting a distorted reality over my existence. Is this the dream? I do not know. Sometimes I wake to screams, maybe they're mine. I try to hold on to myself but I'm just met with emptiness. I try to hold... hold on. The man appears at the end of the room. He moves towards me, and then, it all fades to black.
+
+##### Date: 3/11/18
+#### The USNS Glomar
+> I can neither confirm nor deny the alleged…
+If you’ve ever watched popular media or seen a spy film, chances are you’ve heard this phrase. But where does it come from, when was it first use. Well, surprisingly, the answer is rather interesting.
+
+The year is 1970 and the two world super powers have been locked in their cold war for over a decade. Tensions are high and both the Russian and American intelligence agencies are desperate for any little bit of information they can find on the opposition.
+
+On the 8th of March the CIA receive news: The Russians had lost a submarine not to far from the west coast of America. The sub in question was the Russian submarine K-129, a Golf-II class ballistic missile sub developed by the USSR in the 1950’s. Just under 100m in length it had capacity for 6 crew members and was intended for use launching long ranged missiles. This was a crucial opportunity for the CIA, as the lost sub could potentially contain launch codes and military secrets of the Russians, which if recovered, would give the US a huge edge.
+
+The CIA immediately began planning a mission to recover the K-129. There was just one problem: The prospective treasure trove was 4.8 kilometers below sea level.
+
+The Plan
+Several ideas of varying credibility were suggested in answer to the problem at hand. One, to attach giant balloons and float the sub to the surface, another, to invest $5 Billion in building a giant fuck off claw and attaching it to a boat. Amazingly, they chose the latter, and even more amazingly… It worked… kinda.
+
+The CIA found an old military boat named the ‘USNS Glomar’ (pictured above) and started to redevelop it, this time with a large claw included. The Glomar was redesigned to have a hatch in the bottom of it, reminiscent of Thunderbird 2. This hatch would open to allow a claw to be released and lowered 4 km to the sea floor. The idea was to then latch onto the k-129 and raise it back to the surface.
+
+Now with a mutant boat in-hand, the CIA had just one last thing to do. They didn’t want the Russian’s to know that they had found the sub, which meant they needed a cover story. And if you thought a giant claw wasn’t dumb enough, wait till you hear this… Their cover story was that billionaire Howard Hughes had developed a sudden interest in manganese nodule mining. With their totally bullet proof plan and a solid story that no person could possibly question, the CIA went out and attempted the recovery (more on that later).
+
+Unsurprisingly the cover story didn’t sit well with the media, and they became suspect. As time went on, the press got more and impatient with CIA, requesting to be told what really happened in the North Pacific (After all its pretty obvious somethings going on when you deploy a huge-ass naval boat to the middle of no where). Eventually some journalists began submitting FOIA requests (Which legally required the CIA to respond with a truthful answer) to the CIA, which put them in a very awkward position. If the CIA told the press what really happened, the Russians would know they had tried to recover the sub (which would kill their advantage), however if they didn’t comply, they’d be breaking the law. The task of resolving this issue fell on the shoulders on one man. “Walt Logan” as he is now identified, was a junior security officer at the CIA during this period. Given this challenge, he came up with a surprisingly clever answer. He realised that the FOIA laws simply require a “truthful” and “accurate” response that did not misconstrue the situation. This meant that providing you didn’t lie about the situation, you could say whatever you liked. It did not mean you had to give the full answer. Armed with the genius loophole, Walt crafted a statement:
+
+We [The CIA] can neither confirm nor deny the existence of the information requested, however if the information were to exist, it would be subject to classification and could not be disclosed
+This was brilliant as it perfectly fulfilled the requirements of the FOIA request whilst simultaneously revealing nothing. It was so good in fact that it became the standard response from the CIA when asked any question. It became known internally as the ‘Glomar response’ as in the “USNS Glomar”, the ship with which the CIA had attached the claw.
+
+About that….
+
+The CIA actually did manage to raise the sub a significant portion of the way to the surface, about 90%, before it half of it snapped off and sunk back to the bottom where it still remains. After 4 years of planning and development and over $6 Billion total in costs, all that the CIA had was half of an empty submarine and a few corpses (of the K-129 crew).
+
