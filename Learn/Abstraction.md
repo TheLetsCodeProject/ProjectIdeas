@@ -290,4 +290,15 @@ C was such a great language that it immediately inspired programmers of the worl
 
 Java followed after C in that it was Object Oriented in nature. It was fairly fast and very flexible. Aside from being slightly simpler than C, Java only had one advantage - It's virtual Runtime.
 
-Remember the 'compiler', a type of program first conceptualized by Grace Hopper. It was the compiler's job to transform input text (code) to output machine code (binary) in a fast and performant way. This model of running code had been the soul method for quite some time now, and Java decided to change it up. Sun Microsystems wanted to go a layer further. Instead of recompiling to each and every different platform you wanted to run on, why couldn't you just ccompile once, run everywhere? The team at Sun Micro put their heads together and designed something awesome - The virtual machine.
+Remember the 'compiler', a type of program first conceptualized by Grace Hopper. It was the compiler's job to transform input text (code) to output machine code (binary) in a fast and performant way. This model of running code had been the sole method for quite some time now, and Java decided to change it up. Sun Microsystems wanted to go a layer further. Instead of recompiling to each and every different platform you wanted to run on, why couldn't you just compile once, run everywhere? The team at Sun Micro put their heads together and designed something awesome - The virtual machine.
+
+Lets take a step back for a second and have a look at our old friend the compiler. We can recall that the compiler worked by reading an input of some 'code' and acting as translater in order to output machine friendly assembly code. This is quite a simple concept hwoever in practice it can get very messy [LINK TO COMPILER ARCHITECTURE]. The team at Sun theorised that if you a machine could run native machine code, then what was stopping someone from writing a virtual machine program that could run native Java code. They thought that if they could write a program that emulated a simple operating system, then you would be able to compile that program to run on any other opearting system. With this new virtual operating system they could then write code directly aimed at this fake system and run it. This means when you write a program in Java it was compiled to run inside a rpogram which had been preinstalled on all computers. This way you could indeed compile once and run anywhere. 
+
+With this new idea about virtual machines in mind, Sun Microsystems began to implement the first version. The final product was named Java Virtual Machine or JVM for short. JVM was compiled to run on all the main operating systems of the day. JVM simulated a fully fledged computer and ran progrmas that were written in Java Bytecode. Now all that was left to do was write a compiler to compile from java source code to JVM's bytecode. Once a program was compiled to Java bytecode it could run on any computer that had the Java Virtual Machine installed on it. If this concept sounds a little confusing it is best illustrated by a diagram:
+
+![Diagram of JVM](http://net-informations.com/java/intro/img/java-virtual-machine.png)
+
+But we are not done here, no not at all. For after the virtual machine came the rise of the interpreter.
+
+## Layer 8: The interpreter
+
